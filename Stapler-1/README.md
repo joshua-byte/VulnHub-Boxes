@@ -1,6 +1,6 @@
 # Stapler: 1 — VulnHub Write-up
 
-## Overview
+## Box info
 
 - **Platform:** VulnHub
 - **Target:** Stapler: 1
@@ -28,7 +28,7 @@ Further enumeration revealed WordPress-related files and user information. A PHP
 
 ## Privilege Escalation
 
-Local enumeration revealed user accounts and a privilege-escalation opportunity involving the `peter` account. The account's sudo permissions allowed commands to be executed as root.
+Local enumeration revealed user accounts and a privilege-escalation opportunity involving the `peter` account. The account's sudo permissions allowed execution of commands as root.
 
 ## Proof of Root Access
 
@@ -39,10 +39,6 @@ The root flag was found in `/root/flag.txt`.
 ## Lessons Learned
 
 - Initial NMAP scans are super important as it reveals the borders of the puzzle needed to be solved.
-- Review file permissions and configuration files for sensitive information.
+- Vulnerabilities assessed as low or medium can lead to discovery of critical vulnerabilities.
+- Reviewing file permissions and configuration files is key in finding information. 
 - Check sudo permissions during local privilege-escalation enumeration.
-- Document commands, evidence, and security impact at each stage.
-
-## Disclaimer
-
-This write-up is for educational purposes and authorised testing in a controlled lab environment only.
