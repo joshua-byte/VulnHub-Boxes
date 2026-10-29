@@ -4,12 +4,7 @@
 
 - **Platform:** VulnHub
 - **Target:** Stapler: 1
-- **Target IP:** `192.168.56.105`
-- **Difficulty:** Beginner
 - **Environment:** Kali Linux and VirtualBox
-- **Objective:** Practise reconnaissance, enumeration, initial access, and privilege escalation in a controlled lab.
-
-> This write-up documents a deliberately vulnerable virtual machine used for educational purposes in an isolated lab.
 
 ## Enumeration
 
@@ -29,7 +24,7 @@ Anonymous FTP access and SMB enumeration provided additional information about t
 
 ## Initial Access
 
-Further enumeration revealed WordPress-related files and user information. A PHP reverse shell was uploaded to the web-accessible uploads directory and executed, providing a shell as the `www-data` user.
+Further enumeration revealed WordPress-related files and user information. A PHP reverse shell was uploaded to the web-accessible uploads directory and executed.
 
 ## Privilege Escalation
 
@@ -37,20 +32,13 @@ Local enumeration revealed user accounts and a privilege-escalation opportunity 
 
 ## Proof of Root Access
 
-Root access was confirmed using `whoami`. The root flag was found in `/root/flag.txt`.
+The root flag was found in `/root/flag.txt`.
 
-## Key Findings
-
-- Anonymous FTP access was enabled.
-- SMB exposed user and file information.
-- WordPress-related files and database credentials were discoverable.
-- A PHP reverse shell provided initial access as `www-data`.
-- Excessive sudo privileges enabled escalation to root.
-
+<img width="959" height="729" alt="flag" src="https://github.com/user-attachments/assets/9e4801b8-026e-4bba-ba0a-0b8c4a695940" />
 
 ## Lessons Learned
 
-- Enumerate all exposed services before attempting exploitation.
+- Initial NMAP scans are super important as it reveals the borders of the puzzle needed to be solved.
 - Review file permissions and configuration files for sensitive information.
 - Check sudo permissions during local privilege-escalation enumeration.
 - Document commands, evidence, and security impact at each stage.
