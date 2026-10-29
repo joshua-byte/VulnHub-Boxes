@@ -1,4 +1,4 @@
-# VulnHub Practice
+# VulnHub Boxes
 
 A hands-on penetration-testing portfolio documenting my independent assessments of intentionally vulnerable virtual machines.
 
