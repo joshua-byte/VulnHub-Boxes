@@ -3,8 +3,6 @@
 ## Overview
 This repository documents my penetration-testing assessment of **PwnLab: init**, an intentionally vulnerable VulnHub machine.
 
-The assessment covered web application enumeration, local file inclusion, unsafe file upload handling, initial access, credential investigation, and Linux privilege escalation.
-
 ## Lab Environment
 - **Attacker:** Kali Linux (`192.168.56.40`)
 - **Target:** PwnLab: init (`192.168.56.109`)
@@ -31,8 +29,3 @@ The assessment covered web application enumeration, local file inclusion, unsafe
 ## Evidence and Report
 - `PwnLab_init_Report.docx` — final assessment report.
 - `screenshot_evidence/` — screenshots extracted from the report and numbered in report order.
-
-The report contains the detailed methodology, findings, impact, remediation recommendations, limitations, and figure descriptions.
-
-## Disclaimer
-This work was performed in an intentionally vulnerable, isolated lab environment for educational purposes. Do not test these techniques against systems without explicit authorisation.
